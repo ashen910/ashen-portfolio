@@ -27,7 +27,7 @@ export default function Contact() {
               <a href="tel:+94702313088"><b>Phone</b>+94 70 231 3088</a>
               <div><b>Location</b>Colombo, Sri Lanka</div>
               <a href="https://github.com/ashen910" target="_blank" rel="noopener noreferrer"><b>GitHub</b>github.com/ashen910</a>
-              <a href="https://linkedin.com/in/ashenwijenayake910/" target="_blank" rel="noopener noreferrer"><b>LinkedIn</b>linkedin.com/in/ashenwijenayake910</a>
+              <a href="https://www.linkedin.com/in/ashenewijenayake910" target="_blank" rel="noopener noreferrer"><b>LinkedIn</b>linkedin.com/in/ashenwijenayake910</a>
             </div>
           </div>
           <form onSubmit={onSubmit}>
