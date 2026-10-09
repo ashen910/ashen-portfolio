@@ -49,7 +49,7 @@ export default function ProjectOverviews() {
 
         {ov.video && (
           <figure className="card vid">
-            <video controls preload="metadata" playsInline poster={ov.video.poster}>
+            <video controls preload="metadata" playsInline poster={ov.video.poster} muted={ov.video.muted}>
               <source src={ov.video.src} type="video/mp4" />
             </video>
             <figcaption>{ov.video.caption}</figcaption>

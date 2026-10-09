@@ -9,7 +9,7 @@ export type Overview = {
   tech: string[];
   repo?: string;
   shots: Shot[];
-  video?: { src: string; poster: string; caption: string };
+  video?: { src: string; poster: string; caption: string; muted?: boolean };
 };
 
 export const OVERVIEWS: Overview[] = [
@@ -72,6 +72,6 @@ export const OVERVIEWS: Overview[] = [
     blurb: "Designed and developed an immersive web experience that transforms a traditional photography portfolio into an interactive 3D city.",
     tech: ["Next.js", "TypeScript", "React Three Fiber", "Three.js", "Tailwind CSS","GSAP / Framer Motion"],
     shots: [],
-    video: { src: "/projects/LensCity/Lens_City_Web_Project.mp4", poster: "/projects/LensCity/Lens_City_Web_Project-poster.png", caption: "Demo walkthrough" },
+    video: { src: "/projects/LensCity/Lens_City_Web_Project.mp4", poster: "/projects/LensCity/Lens_City_Web_Project-poster.png", caption: "Demo", muted: true },
   },
 ];
