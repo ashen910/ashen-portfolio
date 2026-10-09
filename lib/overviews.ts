@@ -65,4 +65,13 @@ export const OVERVIEWS: Overview[] = [
     shots: [],
     video: { src: "/projects/oviklo/yrts-demo.mp4", poster: "/projects/oviklo/yrts-poster.jpg", caption: "Demo walkthrough" },
   },
+   {
+    id: "LensCity",
+    name: "LensCity — Interactive 3D Photography Portfolio",
+    type: "NextJS/TypeScript · Freelancing project",
+    blurb: "Designed and developed an immersive web experience that transforms a traditional photography portfolio into an interactive 3D city.",
+    tech: ["Next.js", "TypeScript", "React Three Fiber", "Three.js", "Tailwind CSS","GSAP / Framer Motion"],
+    shots: [],
+    video: { src: "/projects/LensCity/Lens_City_Web_Project.mp4", poster: "/projects/LensCity/Lens_City_Web_Project-poster.png", caption: "Demo walkthrough" },
+  },
 ];
