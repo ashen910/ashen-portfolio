@@ -104,7 +104,7 @@ export const PROJ: [string, string, string, string, string, string, string][] = 
     "LensCity — Interactive 3D Photography Portfolio",
     "Web Application",
     "wf",
-    "Next.js, TypeScript, React Three Fiber, Three.js, Tailwind CSS, GSAP / Framer Motion",
+    "Next.js · TypeScript · React Three Fiber · Three.js · Tailwind CSS · GSAP / Framer Motion",
     "Immersive photography portfolio featuring an interactive 3D city, cursor-responsive camera movement, cinematic transitions, and glassmorphism content panels for exploring galleries and website sections.",
     "",
     "https://github.com/ashen910/LensCity_Photography_webpage.git",
