@@ -44,7 +44,7 @@ export default function ProjectOverviews() {
             <p>{ov.blurb}</p>
             <div>{ov.tech.map((t) => <span key={t} className="chip">{t}</span>)}</div>
           </div>
-          {ov.repo && <a className="btn" href={ov.repo} target="_blank" rel="noopener noreferrer">View code</a>}
+          {ov.repo && <a className="btn" href={ov.repo} target="_blank" rel="noopener noreferrer">View</a>}
         </div>
 
         {ov.video && (
