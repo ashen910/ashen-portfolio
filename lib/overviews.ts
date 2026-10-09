@@ -71,6 +71,7 @@ export const OVERVIEWS: Overview[] = [
     type: "NextJS/TypeScript · Freelancing project",
     blurb: "Designed and developed an immersive web experience that transforms a traditional photography portfolio into an interactive 3D city.",
     tech: ["Next.js", "TypeScript", "React Three Fiber", "Three.js", "Tailwind CSS","GSAP / Framer Motion"],
+    repo: "https://lens-city-photography-webpage.vercel.app",
     shots: [],
     video: { src: "/projects/LensCity/Lens_City_Web_Project.mp4", poster: "/projects/LensCity/Lens_City_Web_Project-poster.png", caption: "Demo", muted: true },
   },
