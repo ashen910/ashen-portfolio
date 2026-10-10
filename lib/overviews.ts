@@ -82,4 +82,14 @@ export const OVERVIEWS: Overview[] = [
     shots: [],
     video: { src: "/projects/LensCity/Lens_City_Web_Project.mp4", poster: "/projects/LensCity/Lens_City_Web_Project-poster.png", caption: "Demo", muted: true },
   },
+   {
+    id: "ICrown",
+    name: "iCrown Fitness Hub — Cinematic Gym Website",
+    type: "NextJS/TypeScript · Freelancing project",
+    blurb: "Designed and developed a premium, mobile-first website for a gym in Gampaha, Sri Lanka. It is built around the gym's real photos and workout reels, with a parallax hero, editorial photo layouts, a keyboard-accessible lightbox, live pricing, member reviews and one-tap WhatsApp and call enquiries.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Motion (Framer Motion)", "Lucide React"],
+    repo: "https://github.com/ashen910/ICrownFitnessHub.git",
+    shots: [],
+    video: { src: "/projects/ICrownFitnessHub/ICrown_Fitness_Hub.mp4", poster: "/projects/ICrownFitnessHub/ICrown_Fitness_Hub-poster.png", caption: "Demo", muted: true },
+  },
 ];
