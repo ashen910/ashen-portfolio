@@ -54,7 +54,14 @@ export const OVERVIEWS: Overview[] = [
     blurb: "Mobile application using Firebase for real-time data storage.",
     tech: ["Java", "Firebase"],
     repo: "https://github.com/ashen910/White-Light-Health-Service",
-    shots: [],
+    shots: [
+      { src: "/projects/WhiteLight/Welcome.jpg", caption: "Welcome Home", w: 720, h: 1560 },
+      { src: "/projects/WhiteLight/Home.jpg", caption: "Home", w: 720, h: 1560 },
+      { src: "/projects/WhiteLight/BMI Calculator.jpg", caption: "BMI Page", w: 720, h: 1560 },
+      { src: "/projects/WhiteLight/Daily Reminder.jpg", caption: "Daily Reminders", w: 720, h: 1560 },
+      { src: "/projects/WhiteLight/Notes.jpg", caption: "Notes", w: 720, h: 1560 },
+      { src: "/projects/WhiteLight/Article.jpg", caption: "Articles", w: 720, h: 1560 },
+    ],
   },
   {
     id: "oviklo",
