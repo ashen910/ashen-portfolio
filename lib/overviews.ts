@@ -51,7 +51,7 @@ export const OVERVIEWS: Overview[] = [
     id: "white-light",
     name: "White Light Health Service",
     type: "Mobile application",
-    blurb: "Mobile application using Firebase for real-time data storage.",
+    blurb: "A Mobile app built with Java, Firebase, and Android Studio to provide a BMI calculator, a daily routine planner, and a water-intake reminder. It also offers doctor-written health articles and a note-taking feature for users to track their health journey.",
     tech: ["Java", "Firebase"],
     repo: "https://github.com/ashen910/White-Light-Health-Service",
     shots: [
