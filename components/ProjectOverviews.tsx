@@ -1,13 +1,24 @@
 "use client";
 import Image from "next/image";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { OVERVIEWS } from "@/lib/overviews";
 
 export default function ProjectOverviews() {
   const [id, setId] = useState(OVERVIEWS[0].id);
   const [open, setOpen] = useState<number | null>(null); // lightbox index
+  const videoRef = useRef<HTMLVideoElement>(null);
   const ov = OVERVIEWS.find((o) => o.id === id)!;
   const n = ov.shots.length;
+
+  const selectProject = (projectId: string) => {
+    if (projectId === id) return;
+    if (videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
+    setId(projectId);
+    setOpen(null);
+  };
 
   const step = useCallback((d: number) => setOpen((i) => (i === null ? i : (i + d + n) % n)), [n]);
 
@@ -34,7 +45,7 @@ export default function ProjectOverviews() {
 
         <div className="tabs" role="tablist" aria-label="Project overviews">
           {OVERVIEWS.map((o) => (
-            <button key={o.id} role="tab" aria-selected={o.id === id} className={o.id === id ? "on" : ""} onClick={() => { setId(o.id); setOpen(null); }}>{o.name}</button>
+            <button key={o.id} role="tab" aria-selected={o.id === id} className={o.id === id ? "on" : ""} onClick={() => selectProject(o.id)}>{o.name}</button>
           ))}
         </div>
 
@@ -49,7 +60,7 @@ export default function ProjectOverviews() {
 
         {ov.video && (
           <figure className="card vid">
-            <video controls preload="metadata" playsInline poster={ov.video.poster} muted={ov.video.muted}>
+            <video key={ov.video.src} ref={videoRef} controls preload="metadata" playsInline poster={ov.video.poster} muted={ov.video.muted}>
               <source src={ov.video.src} type="video/mp4" />
             </video>
             <figcaption>{ov.video.caption}</figcaption>
